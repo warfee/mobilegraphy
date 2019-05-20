@@ -2,7 +2,6 @@ import React from 'react';
 import { Text, View } from 'react-native';
 import { Icon } from 'native-base';
 
-
 class ProfileScreen extends React.Component {
 
 	 static navigationOptions = {
