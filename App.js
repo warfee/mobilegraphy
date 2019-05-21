@@ -7,9 +7,7 @@ import Dashboard from './Dashboard.js';
 import Loading from './Loading.js';
 import tryupload from './Tryupload.js';
 
-import * as firebase from 'firebase';
-import { firebaseConfig } from './Config.js';
-firebase.initializeApp(firebaseConfig);
+import { db } from './Config.js';
 
 
 class LoginScreen extends React.Component {
