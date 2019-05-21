@@ -102,6 +102,8 @@ class Login extends Component {
     return (
       <View style={styles.container}>
         <Button title='Sign in With Google' onPress={()=> this.signInWithGoogleAsync()}/>
+        <Text style={{marginTop : 20, marginBottom : 20}}> or </Text>
+        <Button title='Try Upload Post Page' onPress={()=> this.props.navigation.navigate('Try')}/>
       </View>
     );
   }

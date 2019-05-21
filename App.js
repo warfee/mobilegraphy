@@ -5,6 +5,7 @@ import { createAppContainer, createSwitchNavigator } from "react-navigation";
 import Login from './Login.js';
 import Dashboard from './Dashboard.js';
 import Loading from './Loading.js';
+import tryupload from './Tryupload.js';
 
 import * as firebase from 'firebase';
 import { firebaseConfig } from './Config.js';
@@ -22,7 +23,8 @@ class LoginScreen extends React.Component {
 const AppSwitchNavigator = createSwitchNavigator({
   Loading: Loading,
   Login: Login,
-  Dashboard: Dashboard
+  Dashboard: Dashboard,
+  Try : tryupload
 });
 
 

@@ -3,7 +3,7 @@ import { Text, View, Button, Image, TextInput} from 'react-native';
 import { Icon } from 'native-base';
 import expo from 'expo';
 
-class AddNewScreen extends React.Component {
+class tryupload extends React.Component {
 
 	 static navigationOptions = {
 
@@ -91,4 +91,4 @@ class AddNewScreen extends React.Component {
 }
 
 
-export default AddNewScreen;
+export default tryupload;
