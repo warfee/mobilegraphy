@@ -80,9 +80,7 @@ class tryupload extends React.Component {
           />
         )}
         <TextInput multiline={true} numberOfLines = {4} placeholder = "Description" style={{ paddingLeft : 10, width:400, borderColor: 'transparent', borderWidth: 1, backgroundColor: 'rgba(210, 215, 211, 0.3)', marginBottom:20}}/>
-         <Button onPress={this.findCoordinates} title="Embed Current Location"/>
-          <Text>Location: {this.state.location}</Text>
-         <Text></Text>
+        
          <Button onPress={() => this.props.navigation.navigate('Feed')} title="Post"/>
 
       </View>
