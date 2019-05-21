@@ -1,6 +1,7 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, Button } from 'react-native';
 import { Icon } from 'native-base';
+import firebase from 'firebase';
 
 class ProfileScreen extends React.Component {
 
@@ -14,7 +15,7 @@ class ProfileScreen extends React.Component {
   render() {
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>Profile Screen!</Text>
+        <Button title="Sign out" onPress={() => firebase.auth().signOut()} />
       </View>
     );
   }
