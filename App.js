@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text} from "react-native";
+import { View, Text, YellowBox} from "react-native";
 import { createAppContainer, createSwitchNavigator } from "react-navigation";
 
 import Login from './Login.js';
@@ -8,6 +8,10 @@ import Loading from './Loading.js';
 import tryupload from './Tryupload.js';
 
 import { db } from './Config.js';
+
+
+console.ignoredYellowBox = ['Setting a timer'];
+
 
 
 class LoginScreen extends React.Component {

@@ -11,10 +11,12 @@ class Loading extends Component {
   checkIfLoggedIn = () => {
     firebase.auth().onAuthStateChanged(
       function(user) {
-        console.log('AUTH STATE CHANGED CALLED ')
+        console.log('AUTH STATE CHANGED CALLED ');
         if (user) {
+          console.log('Done LogIn');
           this.props.navigation.navigate('Dashboard');
         } else {
+          console.log('Failed LogIn ');
           this.props.navigation.navigate('Login');
         }
       }.bind(this)
