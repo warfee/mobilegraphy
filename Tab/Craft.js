@@ -137,7 +137,6 @@ class AddNewScreen extends React.Component {
 <TextInput onChange={this.handleChange} multiline={true} numberOfLines = {4} placeholder = "Description" style={{ paddingLeft : 10, width:400, borderColor: 'transparent', borderWidth: 1, backgroundColor: 'rgba(210, 215, 211, 0.3)', marginBottom:20}}/>
          
          <Button onPress={this.handleSubmit} title="Post"/>
-         <Button onPress={() => this.props.navigation.navigate('Dashboard')} title="Done"/>
       </View>
     )
   };
@@ -165,7 +164,7 @@ class AddNewScreen extends React.Component {
 
   _pickImage = async () => {
     let pickerResult = await ImagePicker.launchImageLibraryAsync({
-      allowsEditing: true,
+      allowsEditing: false,
       aspect: [4, 3],
     });
 
